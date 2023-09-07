@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 data-testid="slackUserName">Erasmus Ezra Buhwa</h1>
+        <img src="./me.jpeg" alt="Erasmus Ezra Buhwa" class="image" data-testid="slackDisplayImage"/>
+        <p>Current UTC Time in Milliseconds: <span class="utcTime" data-testid="currentUTCTime"></span></p>
+    <h3 class="track" data-testid="myTrack">Frontend</h3>
+    <h4>
+        <a data-testid=“githubURL” href="https://github.com/Buhwa1/hng-task1">Link to code on github</a>
+    </h4>
+    </div>
+
+
+    
+
+    <script>
+        // Get the current UTC time in milliseconds
+        var currentUTCTime = Date.now();
+
+        // Find the element with the data-testid attribute
+        var element = document.querySelector('[data-testid="currentUTCTime"]');
+
+        // Set the inner text of the element to display the time
+        element.innerText = currentUTCTime;
+    </script>
+</body>
+</html>

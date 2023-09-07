@@ -1,0 +1,12 @@
+body{
+    position: absolute;
+    left: 30%;
+}
+
+.track{
+    color:brown;
+}
+
+.utcTime{
+    color: blue;
+}
